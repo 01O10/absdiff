@@ -29,7 +29,7 @@ def main():
     if uploaded_xlsx is not None:
         df_y = pd.read_excel(uploaded_xlsx, engine='openpyxl')
         st.write("---------------------")
-        st.subheader("About CSV")
+        st.subheader("About XLSX")
         st.write(df_y)
         
     if uploaded_csv and uploaded_xlsx:
